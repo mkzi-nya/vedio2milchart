@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vedio2milchart"
+version = "0.1.0"
+description = "Convert Milthm gameplay recordings into playable milplay charts"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+  "Pillow",
+  "opencv-python",
+]
+
+[project.scripts]
+vedio2milchart = "convert:main"
+
+[tool.setuptools]
+py-modules = [
+  "anchors",
+  "automatic",
+  "axis_regularize_v6",
+  "batch_convert",
+  "bundle",
+  "combo",
+  "compact_data_v7",
+  "convert",
+  "counter_frames_v4",
+  "counter_guard",
+  "counter_probe",
+  "contact_spacing_v1",
+  "curve_fit",
+  "decorative",
+  "effect_anchor_v5",
+  "enrich_v2",
+  "evidence",
+  "export",
+  "export_v2",
+  "geometry",
+  "geometry_fill",
+  "hold_fit",
+  "hold_motion_v6",
+  "hold_refine_v4",
+  "hollow_notes_v6",
+  "judgement_fit_v4",
+  "line_reconstruct_v6",
+  "local_reconcile",
+  "notes_v2",
+  "offscreen_holds_v5",
+  "playability_guard",
+  "reconstruct",
+  "repair_approach_v5",
+  "server",
+  "shapes",
+  "special_flow_reconcile",
+  "streak_reconstruct_v1",
+  "target_review_v6",
+  "timeline",
+  "upgrade",
+  "visual_dedupe",
+]
+
+[tool.ruff]
+line-length = 120

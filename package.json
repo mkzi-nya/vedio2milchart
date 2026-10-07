@@ -1,0 +1,14 @@
+{
+  "name": "vedio2milchart-tools",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "terser": "5.18.2"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100"
+  },
+  "description": "Build and review Milthm chart conversion output"
+}
